@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto&display=swap");
+/* Default styles */
+
+/* Default styles */
+body {
+  margin: 0;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  gap: 64px;
+
+  position: relative;
+  width: 1440px;
+  height: 815px;
+
+  /* Primary/White */
+
+  background: #ffffff;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 1312px;
+  height: 151px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+
+  width: 1312px;
+  height: 59px;
+}
+
+#heading {
+  width: 244px;
+  height: 59px;
+  /* 1440/Header/H1 */
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 110%; /* or 59px */
+  text-align: center;
+  text-transform: uppercase;
+  /* Primary/Black */
+  color: #000000;
+}
+
+.under-heading-text {
+  width: 700px;
+  height: 31px;
+
+  /* 1440/Primary/P3 */
+
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+
+  text-align: center;
+
+  /* Primary/Black */
+
+  color: #000000;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 128px;
+  height: 29px;
+}
+
+.button1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+  width: 128px;
+  height: 29px;
+  font-weight: 700;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#button-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 128px;
+  height: 26px;
+}
+
+.press-me {
+  width: 128px;
+  height: 26px;
+  /* 1440/Button/B1 */
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%; /* identical to box height, or 26px */
+  text-align: center;
+  text-transform: uppercase;
+  /* Primary/Black */
+  color: #000000;
+}
+
+.line {
+  width: 128px;
+  height: 1px;
+  /* Primary/Black */
+  background: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 1312px;
+  height: 472px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  isolation: isolate;
+
+  width: 360px;
+  height: 472px;
+}
+
+.recipe-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  isolation: isolate;
+  border-radius: 400px;
+
+  width: 360px;
+  height: 360px;
+}
+
+.recipe-title {
+  width: 360px;
+  height: 80px;
+
+  /* 1440/Header/H3 */
+
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  /* or 40px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Primary/Black */
+
+  color: #000000;
+}
+
+.img33 {
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  top: 262px; /* Adjust the top position as per your requirements */
+  right: 1330px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.img35 {
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  top: 530px; /* Adjust the top position as per your requirements */
+  right: 825px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.img37 {
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  top: 279px; /* Adjust the top position as per your requirements */
+  right: 550px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.img38 {
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  top: 476px; /* Adjust the top position as per your requirements */
+  right: 52px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* Media Query for screens with a maximum width of 375px (phones and smaller devices) */
+
+@media (max-width: 375px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    gap: 32px;
+
+    position: relative;
+    width: 375px;
+    height: 1602px;
+
+    background: #ffffff;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 343px;
+    height: 150px;
+    margin-right: 40px;
+
+    /* Inside auto layout */
+  }
+
+  .heading {
+    width: 100%; /* Adjusted to fit the viewport */
+    margin-left: 0; /* Removed margin */
+    justify-content: center; /* Center align the content */
+    gap: 16px; /* Adjust the gap as per your preference */
+  }
+
+  #heading {
+    width: 343px;
+    height: 40px;
+
+    /* 375/Header/H1 */
+
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    /* identical to box height, or 40px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Primary/Black */
+
+    color: #000000;
+  }
+
+  .under-heading-text {
+    width: 343px;
+    height: 52px;
+
+    /* 375/Primary/P3 */
+
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+
+    text-align: center;
+
+    /* Primary/Black */
+
+    color: #000000;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 115px;
+    height: 26px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  .press-me {
+    font-size: 16px; /* Decreased font size for smaller screens */
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    margin-top: 105px;
+    margin-right: 90px;
+
+    width: 304px;
+    height: 1292px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .recipe-title {
+    width: 304px;
+    height: 52px;
+
+    /* 375/Header/H3 */
+
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    /* or 26px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Primary/Black */
+
+    color: #000000;
+  }
+
+  .recipe-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+
+    width: 304px;
+    height: 304px;
+  }
+  .img33 {
+    position: absolute;
+    width: 135.11px;
+    height: 135.11px;
+    left: -7.23px;
+    top: 245.51px;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .img35 {
+    position: absolute;
+    width: 135.11px;
+    height: 135.11px;
+    left: -5.22px;
+    top: 980.02px;
+  }
+  .img37 {
+    position: absolute;
+    width: 135.11px;
+    height: 135.11px;
+    left: 240.22px;
+    top: 785.02px;
+  }
+  .img38 {
+    position: absolute;
+    width: 135.11px;
+    height: 135.11px;
+    left: 215.91px;
+    top: 1480.91px;
+  }
+}
